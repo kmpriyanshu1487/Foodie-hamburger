@@ -3,10 +3,23 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
     background-color: #F6F0EB;
     font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #000;
 }
 
 header {
@@ -14,46 +27,39 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 23px;
+    padding: 14px 22px;
+    min-height: 65px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+.header-content {
+    min-height: 65px;
+}
 nav {
     display: flex;
     gap: 60px;
-}
-
-nav a {
-    font-weight: 500;
-    font-size: 16px;
-    color: #492118;
-    text-decoration-line: none;
-}
-
-nav a+a {
-    margin-left: 30px;
-
-}
-
-.logo {
-    width: 40px;
-}
-
-img {
-    width: 100%;
 }
 
 main {
     padding: 0 24px;
 }
 
-.hero-section {
-    margin-top: 80px;
+
+nav a {
+    font-weight: 600;
+    font-size: 13px;
+    color: #492118;
 }
 
-.hero-section p {
-    color: #492118;
-    text-align: center;
-    font-size: 24px;
+nav a+a {
+    margin-left: 2px;
+}
+
+.logo {
+    width: 30px;
+}
+
+img {
+    width: 100%;
 }
 
 .image-container {
@@ -61,15 +67,232 @@ main {
     margin: 0 auto;
 }
 
-.container {
-    max-width: 1290px;
-    margin: 0 auto;
-    Width:900px;
-    Height: 694px;
+.hero-section {
+    margin-top: 50px;
 }
 
-.container p {
-    font-weight: 600;
-    font-size: 38px;
+.hero-section p {
+    color: #492118;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.section .image-container {
+    max-width: 960px;
+
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.section h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #492118;
+    text-align: center;
+}
+
+
+.gototop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999; 
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gototop img {
+    height: 20px;
+    width: 20px;
+}
+
+.Footer-main p {
+    text-align: center;
+    font-size: 13px;
+}
+
+.gototop-span {
     color: #492118;
 }
+
+.close-icon {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-icon {
+    font-size: 32px;
+    background-color: #fff;
+    display: none;
+}
+
+@media (max-width:1100px) {
+    nav {
+
+        gap: 50px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .logo {
+        width: 28px;
+    }
+
+    header {
+
+        padding: 11px 20px;
+    }
+
+
+}
+
+@media (max-width:800px) {
+
+    nav {
+        gap: 22px;
+    }
+
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 24px;
+    }
+
+    header {
+
+        padding: 9px 18px;
+    }
+
+    .hero-section {
+        margin-top: 30px;
+    }
+
+    .section {
+        margin-top: 80px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .close-icon {
+
+        display: block;
+    }
+
+    header {
+        background-color: #f2ece7;
+        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+       
+    }
+
+    nav {
+        position: absolute;
+        background-color: rgba(255, 255, 255, .75);
+        flex-direction: column;
+        right: -200px;
+        padding: 14px;
+        top: -200px;
+        transition: all .5s ease-in-out;
+        /* display:flex; */
+        overflow-x: hidden;
+        
+
+    }
+
+    nav a {
+        margin-top: 20px;
+    }
+
+    .header-content {
+        min-height: 65px;
+        
+    }
+
+
+    nav a+a {
+        margin-top: 16px;
+        margin: 0;
+    }
+
+    .hero-section {
+        margin-top: 20px;
+    }
+
+    .hero-section p {
+        font-weight: 500;
+        font-size: 12px;
+
+    }
+
+    .section {
+        margin-top: 23px;
+    }
+
+    .section h2 {
+        font-size: 15px;
+
+    }
+
+    .hamburger-icon {
+        display: block;
+        background-color: inherit;
+        font-size: 26px;
+    }
+
+    .close-icon .hamburger-menu-container {
+        display: block;
+    }
+
+    .menu-open nav {
+        right: 12px;
+        top: 12px;
+    }
+
+    .menu-open .hamburger-menu-container {
+        display: none;
+    }
+
+    .gototop {
+
+        right: 5px;
+        bottom: 5px;
+
+    }
+
+    .Footer-main p {
+
+        font-size: 8px;
+    }
+
+    .gototop {
+        right: 10px;
+        bottom: 10px;
+        z-index: 9999;
+    }
+
+}
+

@@ -3,61 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hamburger</title>
+    <link rel="stylesheet" href="HamBurger.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="HamBurger.css" />
     <script src="HamBurger.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./images/foodie hamburger logo.png" alt="logo" />
-      </div>
-      <nav>
-        <a href="/">Top Picks</a>
-        <a href="/">Whopper</a>
-        <a href="/">Stunner Menu</a>
-        <a href="/">New Foodie Collection</a>
-        <a href="/">Deal of the Day</a>
-      </nav>
-    </header>
+    <div class="header-content">
+      <header>
+        <div class="logo">
+          <img src="./images/foodie hamburger logo.png" alt="logo" />
+        </div>
+        <div class="hamburger-menu-container">
+          <div class="hamburger-menu">
+            <span class="hamburger-icon">&#9776;</span>
+          </div>
+        </div>
+        <nav>
+          <span class="close-icon">&times;</span>
+          <a href="#Top-Picks">Top Picks</a>
+          <a href="#Whopper">Whopper</a>
+          <a href="#Stunner-Menu">Stunned Burger</a>
+          <a href="#New-Foodie-Collection">New Foodie Collection</a>
+          <a href="#Deal-of-the-Day">Deal of the Day</a>
+        </nav>
+      </header>
+    </div>
     <main>
       <section class="hero-section">
         <div class="image-container">
-          <img src="./images/Group 2.png" alt="hero-image" />
+          <img src="./images/Group 2.png" alt="" />
         </div>
         <p>Well, You can’t resist anymore!</p>
       </section>
-      <section class="hero-section">
-        <div class="container">
-          <p>Top Picks</p>
+
+      <section id="Top-Picks" class="section">
+        <h2>Top Picks</h2>
+        <div class="image-container">
           <img
             src="./images/peter-dawn-sxZ_Ca6MkWM-unsplash 1.png"
-            alt="hero-image"
+            alt="burger2.png"
           />
         </div>
       </section>
-      <section class="hero-section">
-        <div class="container">
-          <p>Whopper</p>
-          <img
-            src="./images/enggal-mukti-48F-Uvx9wvw-unsplash 2.png"
-            alt="hero-image"
-          />
+      <section id="Whopper" class="section">
+        <h2>Whopper</h2>
+        <div class="image-container">
+          <img src="./images/burder1.png" alt="Ellipse 4.png" />
         </div>
       </section>
-      <section class="hero-section">
-        <div class="container">
-          <p>Stunner Menu</p>
-          <img
-            src="./images/jonathan-borba-8l8Yl2ruUsg-unsplash 1.png"
-            alt="hero-image"
-          />
+      <section id="Stunner-Menu" class="section">
+        <h2>Stunner Menu</h2>
+        <div class="image-container">
+          <img src="./images/burger2.png" alt="burger2.png" />
         </div>
       </section>
+
+      <section id="New-Foodie-Collection" class="section">
+        <h2>New Foodie Collection</h2>
+        <div class="image-container">
+          <img src="./images/burger3.png" alt="burger3.png.png" />
+        </div>
+      </section>
+      <section id="Deal-of-the-Day" class="section">
+        <h2>Deal of the Day</h2>
+        <div class="image-container">
+          <img src="./images/lastimg.png" alt="lastimg.png" />
+        </div>
+      </section>
+      <a class="gototop" href="#"
+        ><img src="./images/Arrow_img.png" alt="rrow_img.png"
+      /></a>
+      <footer class="Footer-main">
+        <p>Designed by <span class="gototop-span">@PRIYANSHU_KUMAR</span></p>
+      </footer>
     </main>
   </body>
 </html>
